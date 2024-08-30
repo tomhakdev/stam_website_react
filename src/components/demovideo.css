@@ -1,0 +1,54 @@
+/* Demo Video Section */
+.demo-video-section {
+    background: #ccf5f1;
+    text-align: center;
+    padding: 50px 20px; /* Adjusts the padding to create space around the content */
+    border-bottom: 1px solid #ccc;
+}
+
+.demo-video-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.demo-video-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.learn-more-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #333;
+    background-color: transparent;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.learn-more-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.video-placeholder {
+    width: 80%;
+    max-width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    border: 4px solid green; /* Matches the border color in the image */
+    background-color: #ddd; /* Placeholder background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}

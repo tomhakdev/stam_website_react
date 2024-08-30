@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f9f9;
+    padding: 20px 10%;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.logo-container {
+    flex-shrink: 0; 
+}
+
+
+.logo {
+    object-fit: contain;
+    display: block;
+    width: 45px;
+    height: 45px;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+nav ul li a.login {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

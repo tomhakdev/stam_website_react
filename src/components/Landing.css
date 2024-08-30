@@ -1,0 +1,129 @@
+.landing {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background: linear-gradient(to top, #ccf5f1 85%, #f5f9f9),
+      linear-gradient(to bottom, #ccf5f1 95%, #f5f9f9);
+    border-bottom: 1px solid #ccc;
+    padding: 0 50px;
+    height: 100vh; /* Full height of viewport */
+    overflow: hidden;
+    position: relative;
+    gap: 250px;
+  }
+  
+  .landing-content {
+    max-width: 100%;
+    top: 40%;
+    transform: translateY(-30%);
+  }
+  
+  .landing h1 {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .landing p {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+  
+  .buttons {
+    padding-top: 20px;
+  }
+  
+  .buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .btn.primary {
+    background-color: black;
+    color: white;
+  }
+  
+  .btn.secondary {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+  }
+  
+  .image-placeholder {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-10%);
+    position: relative;
+  }
+  
+  .image-placeholder img {
+    width: 450px;
+    height: 450px;
+    max-width: 100%;
+    max-height: 100%;
+    border: 4px solid green;
+    position: absolute; /* Stacks images on top of each other */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Hide all images by default */
+    transition: opacity 1s ease-in-out; /* Smooth transition for fading */
+  }
+  
+  .image-placeholder img.active {
+    opacity: 1; /* Only the active image will be visible */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .landing {
+      flex-direction: column; /* Image below text */
+      padding: 30px 20px;
+      gap: 30px;
+    }
+  
+    .landing-content {
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    .image-placeholder {
+      width: 300px; /* Adjust image size for smaller screens */
+      height: 300px;
+      padding-left: 0px;
+    }
+  
+    .landing h1 {
+      font-size: 50px; /* Smaller font for smaller screens */
+    }
+  
+    .landing p {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .landing h1 {
+      font-size: 40px;
+    }
+  
+    .landing p {
+      font-size: 16px;
+    }
+  
+    .buttons .btn {
+      padding: 8px 16px;
+    }
+  
+    .image-placeholder {
+      width: 250px; /* Further adjust image size for smaller screens */
+      height: 250px;
+      padding-left: 0px;
+    }
+  }
+  
